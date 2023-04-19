@@ -30,14 +30,13 @@ Game::~Game()
 }
 
 
-
 /***
  * PLEASE UPDATE THIS METHOD
  *
  * When snake moves to a position,
  * if position belongs to BOARD or SNAKE body, status is GAME_OVER
  * if position is having CHERRY :
- * 			- score schoule be increased
+ * 			- score should be increased
  * 			- snake should eat cherry
  * 			- a new cherry should be randomly added
  * otherwise, this position should be assigned as cell of snake
@@ -98,13 +97,13 @@ void Game::processUserInput(Direction direction)
  *
  * check whether the snake can move to the intended direction with the current direction.
  * If current direction is UP or DOWN, the next direction should not be UP or DOWN
- * if current diection is LEFT or RIGHT, the next direction should not be LEFT or RIGHT
+ * if current direction is LEFT or RIGHT, the next direction should not be LEFT or RIGHT
  *
  * Args:
  * 		current (Direction): current direction of the snake
- * 		next (Direction): the intened direction that snake will move
+ * 		next (Direction): the intended direction that snake will move
  * Returns:
- * 		bool: whether the snake can ben changed the direction
+ * 		bool: whether the snake can changed the direction
  *
  ***/
 bool Game::canChange(Direction current, Direction next) const {
